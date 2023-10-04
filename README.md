@@ -15,5 +15,14 @@ You should now have the following installed:
 - twine
 - click>=8.1.7
 
+# Building the project
+1. Create the virtual envirnment and activate it
+- ```virtualenv venv```
+- ```source venv/bin/activate```
+2. Install the tool in the virtual environment
+- ```python setup.py develop```
+3. Verify with the hello command
+- ```pygit hello -n Johnny```
+
 ## Python Version
 Python 3.11.5

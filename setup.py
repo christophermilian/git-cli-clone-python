@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = fh.read()
     setup(
-    name = 'Python Git Clone',
+    name = 'python_git_clone',
     version = '0.0.1',
     author = 'Christopher Milian',
     author_email = 'christophermilian16@gmail.com',
