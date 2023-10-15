@@ -3,3 +3,4 @@ build
 dist
 python_git_clone.egg-info
 venv
+.DS_Store
