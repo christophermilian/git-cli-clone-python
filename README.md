@@ -24,5 +24,9 @@ You should now have the following installed:
 3. Verify with the hello command
 - ```pygit hello -n Johnny```
 
+# Available Commands
+1. ```pygit hello -n {name}```
+2. **in-progress** ```pygit init {new-repo-folder-name}```
+
 ## Python Version
 Python 3.11.5
