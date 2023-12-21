@@ -26,7 +26,8 @@ You should now have the following installed:
 
 # Available Commands
 1. ```pygit hello -n {name}```
-2. **in-progress** ```pygit init {new-repo-folder-name}```
+2. ```pygit init {new-repo-folder-name}``` **in-progress** 
+   - Creates a new folder and a child `.git` directory
 
 ## Python Version
 Python 3.11.5

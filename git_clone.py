@@ -26,7 +26,7 @@ def cli():
 @cli.command()
 @click.option("-n", "--name", type=str, help="Name to greet", default="World")
 def hello(name):
-    """Print out a greeting with an input name"""
+    """Print out a greeting with an input name. Used to verify pygit setup."""
     click.echo(f"Hello {name}")
 
 
