@@ -7,11 +7,11 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = fh.read()
     setup(
     name = 'python_git_clone',
-    version = '0.0.1',
+    version = '0.0.2',
     author = 'Christopher Milian',
     author_email = 'christophermilian16@gmail.com',
     license = 'MIT License',
-    description = 'Python based Git clone allowing one to create repos, commit, and push.',
+    description = 'Python-based Git clone allowing one to create repos, add commits, and push changes to branches',
     long_description = long_description,
     long_description_content_type = "text/markdown",
     url = 'https://github.com/christophermilian/git-cli-clone-python',
