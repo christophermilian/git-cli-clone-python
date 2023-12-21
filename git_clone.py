@@ -46,21 +46,36 @@ def init(folder):
 
     git_path = "./" + folder + "/.git"
     os.mkdir(git_path)
-    file_array = ["HEAD", "config", "description"]
-    folder_array = ["hooks", "info", "objects", "refs"]
+    
+    # arrays to hold parent and child files and folders
+    root_file_array = ["HEAD", "config", "description"]
+    root_folder_array = ["hooks", "info", "objects", "refs"]
+    objects_folder_array = ["info", "pack"]
+    refs_folder_array = ["heads", "tags"]
 
-    for file_name in file_array:
+    # create root files
+    for file_name in root_file_array:
         with open(os.path.join(git_path, file_name), "x", encoding="utf-8") as fp:
             if file_name == "HEAD":
                 fp.write("ref: refs/heads/master")
+                fp.write("")
             elif file_name == "description":
                 fp.write("Unnamed repository; edit this file 'description' to name the repository.")
+                fp.write("")
             else:
                 fp.write("")
-                fp.write("")
 
-    for folder_name in folder_array:
+    # create root folders
+    for folder_name in root_folder_array:
         os.mkdir(git_path + "/" + folder_name)
+
+    # create folders in object directory
+    for folder_name in objects_folder_array:
+        os.mkdir(git_path + "/" + root_folder_array[2] + "/" + folder_name)
+
+    # create folders in refs directory
+    for folder_name in refs_folder_array:
+        os.mkdir(git_path + "/" + root_folder_array[3] + "/" + folder_name)
 
     hint_message = [
         "Using 'master' as the name for the initial branch. This default branch name",

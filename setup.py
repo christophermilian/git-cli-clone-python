@@ -7,7 +7,7 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = fh.read()
     setup(
     name = 'python_git_clone',
-    version = '0.0.3',
+    version = '0.0.4',
     author = 'Christopher Milian',
     author_email = 'christophermilian16@gmail.com',
     license = 'MIT License',
